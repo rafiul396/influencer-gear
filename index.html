@@ -3,24 +3,232 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles/style.css">
+    <!-- <link rel="stylesheet" href="styles/responsive.css"> -->
     <title>My Store</title>
 </head>
-<body>
+<body class="poppins">
     <header class="header">
-        <nav class="navbar">
-            <h3>Influner products</h3>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Sign up</a></li>
-            <li><a href="#">Log in</a></li>
-            <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-            <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+        <nav class="navbar container flex">
+            <a href="#" class="none anchor"><i class="fa-solid fa-bars"></i></a>
+            <h3 class="logo"><a href="#" class="anchor">Influner products</a></h3>
+            <ul class="flex">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Sign up</a></li>
+                <li><a href="#">Log in</a></li>
+                <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+            <a href="#" class="none anchor"><i class="fa-solid fa-cart-shopping"></i></a>
         </nav>
+        <section class="hero-sec container flex">
+            <div class="left-sec">
+                <h1 class="hero-title">
+                    Start your Journey as 
+                    Influencer
+                </h1>
+                <p class="hero-info">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem vestibulum sed scelerisque eros. Lectus faucibus.
+                </p>
+                <button class="hero-btn btn-primary flex">Preebook now<i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+            <div class="right-sec flex">
+                <img class="hero-img" src="images/main-camera.png" alt="">
+            </div>
+        </section>
     </header>
     <main>
-
+        <!-- sponsor section -->
+        <section class="sponsor-sec container flex">
+            <img src="logos/Alibaba.svg" alt="">
+            <img src="logos/Amazon.svg" alt="">
+            <img src="logos/Daraz.pk Logo.svg" alt="">
+            <img src="logos/Ebay.svg" alt="">
+            <img src="logos/Rakuten.svg" alt="">
+            <img src="logos/Walmart.svg" alt="">
+            <img src="logos/Target.svg" alt="">
+        </section>
+        <section class="product-sec container">
+            <h3 class="product-title">Popular Collection</h3>
+            <div class="product-container">
+                <!-- card - 1 -->
+                <div class="card">
+                    <img class="product-img" src="images/tripod.png" alt="">
+                    <h2 class="product-name">Flex Tripod</h2>
+                    <p class="price inter-normal">$50.48</p>
+                    <div class="rating-container flex">
+                        <div class="stars-icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="rating-box">5.00</p>
+                    </div>
+                    <p class="product-info inter-normal">Wordwide shifting <br> available</p>
+                    <p class="product-info inter-normal">Buyers protection possible!</p>
+                </div>
+                <!-- card - 2 -->
+                <div class="card">
+                    <img class="product-img" src="images/mic.png" alt="">
+                    <h2 class="product-name">Flex Tripod</h2>
+                    <p class="price inter-normal">$120.25</p>
+                    <div class="rating-container flex">
+                        <div class="stars-icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="rating-box">5.00</p>
+                    </div>
+                    <p class="product-info inter-normal">Wordwide shifting <br> available</p>
+                    <p class="product-info inter-normal">Buyers protection possible!</p>
+                </div>
+                <!-- card - 3 -->
+                <div class="card">
+                    <img class="product-img" src="images/airpod.png" alt="">
+                    <h2 class="product-name">Flex Tripod</h2>
+                    <p class="price inter-normal">$100.00</p>
+                    <div class="rating-container flex">
+                        <div class="stars-icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="rating-box">5.00</p>
+                    </div>
+                    <p class="product-info inter-normal">Wordwide shifting <br> available</p>
+                    <p class="product-info inter-normal">Buyers protection possible!</p>
+                </div>
+                <!-- card - 4 -->
+                <div class="card">
+                    <img class="product-img" src="images/drone.png" alt="">
+                    <h2 class="product-name">Flex Tripod</h2>
+                    <p class="price inter-normal">$980.25</p>
+                    <div class="rating-container flex">
+                        <div class="stars-icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="rating-box">5.00</p>
+                    </div>
+                    <p class="product-info inter-normal">Wordwide shifting <br> available</p>
+                    <p class="product-info inter-normal">Buyers protection possible!</p>
+                </div>
+                <!-- card - 5 -->
+                <div class="card hover:text-red-500">
+                    <img class="product-img" src="images/lights.png" alt="">
+                    <h2 class="product-name">Flex Tripod</h2>
+                    <p class="price inter-normal">$1200.00</p>
+                    <div class="rating-container flex">
+                        <div class="stars-icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="rating-box">5.00</p>
+                    </div>
+                    <p class="product-info inter-normal">Wordwide shifting <br> available</p>
+                    <p class="product-info inter-normal">Buyers protection possible!</p>
+                </div>
+                <!-- card - 6 -->
+                <div class="card">
+                    <img class="product-img" src="images/setup.png" alt="">
+                    <h2 class="product-name">Flex Tripod</h2>
+                    <p class="price inter-normal">$50.48</p>
+                    <div class="rating-container flex">
+                        <div class="stars-icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="rating-box">5.00</p>
+                    </div>
+                    <p class="product-info inter-normal">Wordwide shifting <br> available</p>
+                    <p class="product-info inter-normal">Buyers protection possible!</p>
+                </div>
+                <!-- card - 7 -->
+                <div class="card">
+                    <img class="product-img" src="images/camera.png" alt="">
+                    <h2 class="product-name">Flex Tripod</h2>
+                    <p class="price inter-normal">$1800.80</p>
+                    <div class="rating-container flex">
+                        <div class="stars-icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="rating-box">5.00</p>
+                    </div>
+                    <p class="product-info inter-normal">Wordwide shifting <br> available</p>
+                    <p class="product-info inter-normal">Buyers protection possible!</p>
+                </div>
+                <!-- card - 8 -->
+                <div class="card">
+                    <img class="product-img" src="images/single-light.png" alt="">
+                    <h2 class="product-name">Flex Tripod</h2>
+                    <p class="price inter-normal">$25.48</p>
+                    <div class="rating-container flex">
+                        <div class="stars-icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="rating-box">5.00</p>
+                    </div>
+                    <p class="product-info inter-normal">Wordwide shifting <br> available</p>
+                    <p class="product-info inter-normal">Buyers protection possible!</p>
+                </div>
+                <!-- card - 9 -->
+                <div class="card">
+                    <img class="product-img" src="images/action.png" alt="">
+                    <h2 class="product-name">Flex Tripod</h2>
+                    <p class="price inter-normal">$380.00</p>
+                    <div class="rating-container flex">
+                        <div class="stars-icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="rating-box">5.00</p>
+                    </div>
+                    <p class="product-info inter-normal">Wordwide shifting <br> available</p>
+                    <p class="product-info inter-normal">Buyers protection possible!</p>
+                </div>
+            </div>
+            <div class="see-more-btn-container">
+                <a href="#" class="see-more-btn">See More<i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </section>
+        <section class="feature-sec flex container">
+            <img src="images/gear.png" alt="">
+            <div class="feature-infos">
+                <h3 class="feature-title">Featured products at one place</h3>
+                <p class="feature-info">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                <button class="btn-primary">Join Now<i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </section>
     </main>
     <footer class="footer">
 
